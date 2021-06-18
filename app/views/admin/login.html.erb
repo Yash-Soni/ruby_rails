@@ -1,0 +1,25 @@
+<h1 style="margin-bottom:5px">Admin#login</h1>
+<%# <p>Find me in app/views/admin/login.html.erb</p> %>
+
+
+
+<%= flash[:notice] %>
+<%= form_with url: "/admin/login", method: :post do |form| %>
+  
+ 
+  <div class="field" style="margin-bottom:5px">
+    <%= form.label :username %>
+    <%= form.text_field :user_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password %>
+    <%= form.password_field :password %>
+  </div>
+
+
+  <div class="actions">
+    <%= form.submit 'Login'%>
+  </div>
+
+  <% end %>

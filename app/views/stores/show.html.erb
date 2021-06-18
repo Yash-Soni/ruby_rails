@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<%= image_tag @store.product_image, :height=>'200', :width=>'300' %>
+
+<p style="margin-bottom:10px, font-size:25px">
+  <strong>Name:</strong>
+  <%= @store.name %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @store.color %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @store.description %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @store.weight %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @store.price %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_store_path(@store) %> |
+<%= link_to 'Back', stores_path %>

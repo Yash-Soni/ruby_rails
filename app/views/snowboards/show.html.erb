@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @snowboard.name %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @snowboard.color %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @snowboard.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @snowboard.price %>
+</p>
+
+<%= link_to 'Edit', edit_snowboard_path(@snowboard) %> |
+<%= link_to 'Back', snowboards_path %>
